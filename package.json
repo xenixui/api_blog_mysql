@@ -1,0 +1,30 @@
+{
+  "name": "api-blog-mysql",
+  "version": "1.0.0",
+  "description": "API REST para una aplicación de blog desarrollada con Node.js y MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "biome lint",
+    "format": "biome check --write"
+  },
+  "keywords": [
+    "api",
+    "blog",
+    "mysql", 
+    "nodejs"
+  ],
+  "author": "Ksenia Konnova",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
