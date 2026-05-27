@@ -12,7 +12,7 @@
   "keywords": [
     "api",
     "blog",
-    "mysql", 
+    "mysql",
     "nodejs"
   ],
   "author": "Ksenia Konnova",
@@ -20,7 +20,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^5.0.0"
+    "express": "^5.0.0",
+    "mysql2": "^3.22.4"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
