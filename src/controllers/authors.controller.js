@@ -32,7 +32,6 @@ const getById = async (req, res) => {
 }
 
 const create = async (req, res) => {
-    //req.body -> name, email, image 
     try {
         const result = await AuthorModel.insert(req.body);
         const newAuthor = await AuthorModel.getById(result.insertId);

@@ -3,6 +3,7 @@ GET http://localhost:3000/api/authors
 ###
 
 GET http://localhost:3000/api/authors/1
+
 ###
 
 POST http://localhost:3000/api/authors
@@ -12,3 +13,7 @@ Content-Type: application/json
     "name": "Javier Moreno",
     "email": "j.moreno@email.com"
 }
+
+###
+
+GET http://localhost:3000/api/categories
