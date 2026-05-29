@@ -1,23 +1,58 @@
+#Autores
+
+#Recuperar todos los autores
 GET http://localhost:3000/api/authors
 
 ###
 
-GET http://localhost:3000/api/authors/1
+#Recuperar autor por ID
+GET http://localhost:3000/api/authors/2
 
 ###
 
+#Crear nuevo autor
 POST http://localhost:3000/api/authors
 Content-Type: application/json
 
 {
-    "name": "Javier Moreno",
-    "email": "j.moreno@email.com"
+    "name": "Javier Moreno Lozano",
+    "email": "j.m.lozano@email.com"
 }
 
 ###
 
+#Categorías
+
+#Recuperar todas las categorías
 GET http://localhost:3000/api/categories
 
 ###
 
+#Posts
+
+#Recuperar todos los posts
 GET http://localhost:3000/api/posts
+
+###
+
+#Recuperar post por ID
+GET http://localhost:3000/api/posts/8
+
+###
+
+#Recuperar post por autor ID
+GET http://localhost:3000/api/posts/author/2
+
+###
+
+#Crear nuevo post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title": "Post de prueba",
+    "description": "Descripción del nuevo post de prueba",
+    "categories_id": 1,
+    "authors_id": 1
+}
+

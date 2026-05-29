@@ -21,7 +21,6 @@ const getById = async (req, res) => {
             });
         }
         return res.json(result);
-    return res.json(result);
     } catch (error) {
         return res.status(500).json({
             message: 'Error al recuperar el autor',
